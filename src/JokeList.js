@@ -87,7 +87,7 @@ class JokeList extends Component {
          );
       }
 
-      let jokes = this.state.jokes.sort((a, b) => (b.votes = a.votes));
+      let jokes = this.state.jokes.sort((a, b) => b.votes - a.votes);
 
       return (
          <div className="JokeList">
